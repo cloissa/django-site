@@ -1,0 +1,262 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html class=no-js>
+
+<head>
+    <meta charset=utf-8>
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <title>My Work</title>
+    <meta name=title content="Chloe Umble's Online Portfolio">
+    <meta name=description content="Hi! I'm Chloe Umble. This is where I keep examples of my work or things I've made. Please contact me or relevant business opportunities">
+    <meta property=og:title content="ChloesPage">
+    <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel=icon href="{% static "CUfinal.gif" %}" />
+    <link rel=stylesheet href="css/homepage.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href = "//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel = "stylesheet">
+</head>
+
+<body id="resumeBody">
+<div id = "resume">
+<div>
+    {% include 'chloesite/header.html' %}
+</div>
+<!-- Modal -->
+<div class="modal fade welcome" id="myModal" tabindex="-1" role="dialog" aria-labelledby="memberModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <p><div class="howdy">Howdy!</div><BR>
+        Hover around the timeline of my past 6-ish years to see the skills and experiences I've aquired along the way.</p>
+
+        <p class="small center">Click anywhere to close this window</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row lists">
+    <div class="md-col-12">
+        <div class="resumepdf"><a target="_blank" href="resume.pdf">Or, check out a PDF version of my resume</a></div>
+        <h1 class="h1header">Knowledge & Skills</h1>
+
+            <ul>
+                <div class="skills chshover">
+                    <li class="uop hhco">HTML/CSS</li>
+                    <li class="hhco">Django</li>
+                    <li class="hhco">Angular JS</li>
+                    <li class="hhco">Git</li>
+                    <li class="hhco">Python</li>
+                </div>
+                <div class="skills">
+                    <li class="uop hhco">JavaScript</li>
+                    <li class="hhco">Bootstrap</li>
+                    <li class="uop">PHP</li>
+                    <li class="vista ambos">Wordpress</li>
+                </div>
+                <div class="skills">
+                    <li class="uop">C/C++</li>
+                    <li class="uop">Java</li>
+                    <li class="uop">Pascal</li>
+                    <li class="uop">Scheme</li>
+                    <li class="uop" >Prolog</li>
+                </div>
+                <div class="skills">
+                    <li class="hhco">Git</li>
+                    <li>Windows/Mac OS</li>
+                    <li class="vista">Adobe Photoshop, Illustrator, InDesign</li>
+                    <li class="uop hhco vista ambos">Adaptability to wide variety of software, tools, and other platforms as needed.</li>
+                </div>
+            </ul>
+    </div>
+</div>
+<!------------------------------------------- timeline ---------------------------------------->
+<div class="row">
+    <div class="timeline col-md-12">
+        <div class="overlap">
+            <div class="top">
+                <div class="chs timebit hover" data-placement="top" data-content=
+                '<div>High School</div>'></div>
+                <div class="uop timebit hover" data-placement="top" data-content=
+                '<div class="small">Computer Science, BS - Emphasis in software engineering</div>'><div class="uopcircle"></div></div>
+                <div class="spacer"></div>
+            </div>
+            <div class="bottom">
+                <div class="random timebit hover" data-placement="right"  data-content='<div>Various Retail, Babysitting, and Lifeguarding jobs...</div>'></div>
+                <div class="ambos timebit hover"  data-class="ambos" data-placement="right" data-content=
+                '<div class="ambopopover"<p>Office of New Student and Family Programs,<br/> University of the Pacific </p>
+            <p class="left">Graduate Intern</p> <p class="right">May 2014 –September 2014</p>
+            <p class="left">Marketing & Communications Manager</p> <p class="right">August 2013 – May 2014</p>
+            <p class="left">Recruitment & Training Manager</p> <p class="right">August 2012 – May 2013</p>
+            <p class="left">OrgSync Manager</p> <p class="right">August 2011 – May 2012</p>
+            <p class="left">Pacific Ambassador</p> <p class="right">November 2010 – May 2014</p></div>'></div>
+            </div>
+        </div>
+        <div class="vista timebit hover"  data-placement="top"  data-content='<div>VISTA Communications and Development Coordinator</div>'></div>
+        <div class="hhco timebit hover" data-placement="top" data-content='<div>Frontend Software Engineer</div>'></div>
+        <div class="line"></div>
+        <div class="marker ten"></div>
+        <p class="label ">2010</p>
+        <div class="marker eleven"></div>
+        <p class="label ">2011</p>
+        <div class="marker twleve"></div>
+        <p class="label ">2012</p>
+        <div class="marker thirteen"></div>
+        <p class="label ">2013</p>
+        <div class="marker fourteen"></div>
+        <p class="label ">2014</p>
+        <div class="marker fifteen"></div>
+        <p class="label ">2015</p>
+        <div class="marker sixteen"></div>
+        <p class="label">2016</p>
+    </div>
+
+<!------------------------------------------- descriptions ---------------------------------------->
+    <div class="col-md-10 col-md-offset-1">
+
+        <div class="jobdescription">
+            <div class="showuop col-md-offset-3">
+            Fell in love with solving problems as puzzles.
+            </div>
+            <div class="showrandom col-md-offset-5">
+            Learned the importance of:
+                <ul>
+                    <li>Efficient folding</li>
+                    <li>Patience</li>
+                    <li>Sunscreen</li>
+
+                </ul>
+            </div>
+            <div class="showhhco">
+            Happy Home Company is a <br /> <br />
+
+            As a frontend software engineer, responsibilities include :<br /> <br />
+                <ul>
+                    <li>Developing features on both user-facing and internal sites using Python, Angular, HTML and CSS that are consistent across all browsers and platform</li>
+                    <li>Building code and libraries designed to be reusable for future use</li>
+                    <li>Ensuring the technical feasibility of UI/UX designs</li>
+                    <li>Optimizing application for maximum speed and scalability</li>
+                    <li>Collaborating with our product and operations team members </li>
+                    <li>Collaborating with design department to maintain graphic standards and branding throughout the product’s interface </li>
+                    <li>Assuring that all user input is validated before handing off to the back-end team</li>
+                </ul>
+            </div>
+            <div class="showvista">
+            <div class="meddescription">
+            Maker Education Initiative is a non-profit organization that supports and empowers educators and communities — particularly, those in underserved areas — to facilitate meaningful making and learning experiences with youth.  <br /> <br />
+
+            Responsibilities as an AmeriCorps VISTA Volunteer : <br /> <br />
+            </div>
+            <ul class="MEd">
+                <li>Served for 365 days as an AmeriCorps VISTA to address poverty by engaging in the Maker Educator Community and working onsite with organizational staff to develop their organizational, administrative, and financial capacity. Ad hoc projects included organizing Young Makers Playbook, collaborating to facilitate Physical Computing Professional Development Workshop for educators and other tasks as assigned. </li>
+                <li>Strengthened the national presence of Maker Ed’s work in high poverty communities through a redeveloped social media strategy, introduction and publishing of monthly blog series. </li>
+                <li>Led efforts with national network of VISTA Members to develop a sense of community, provide mutual support to share resources and lessons learned, and disseminate case studies and best practices to engage youth from high poverty communities in making activities.</li>
+            </ul>
+            </div>
+            <div class="showambos">
+            The Pacific Ambassadors promote leadership and student involvement. As official student representatives of the University and students, Pacific Ambassadors are the  front line customer service points of contact for communicating with prospective and new students, campus guests, and alumni. <br /><br />
+                <p class="left">Graduate Intern: Weekend of Welcome</p>
+                <p class="right">May 2014 –September 2014</p>
+                <ul class="MEd">
+                    <li>Collaborator for implementing first University Weekend of Welcome for all incoming students, with a focus on campus wide event logistics and wellness programming. Manage student leadership team, responsible for all social media, department webpages and print publications, and troubleshoot other IT issues as they arise, complete any other tasks as assigned.</li>
+                </ul>
+                <p class="left">Marketing & Communications Manager</p>
+                <p class="right">August 2013 – May 2014</p>
+                <ul class="MEd">
+                    <li>Partnered with University Admissions Department to create and implement self-guided tour system, and manage and design all publications related to department including web pages on University-wide website.
+                    </li>
+                </ul>
+                <p class="left">Recruitment & Training Manager</p>
+                <p class="right">August 2012 – May 2013</p>
+                <ul class="MEd">
+                    <li>Led organization’s year-long recruitment and hiring process, which included hiring 20 incoming Ambassadors, organizing veteran Ambassadors to help facilitate a 4 month Campus Tours and Professional Development training process, as well as assisted in teaching a 2 unit leadership course.
+                    </li>
+                </ul>
+                <p class="left">OrgSync Manager</p>
+                <p class="right">August 2011 – May 2012</p>
+                <ul class="MEd">
+                    <li>Served as point communication between Office of Admissions, 60 student staff members, and assistant director to ensure that all campus-wide group tours and student panels are staffed, maintain organizations OrgSync page, and collect and track responses to weekly emails from student staff.
+                    </li>
+                </ul>
+                <p class="left">Pacific Ambassador</p>
+                <p class="right">November 2010 – May 2014</p>
+                <ul class="MEd">
+                    <li>Facilitate campus tours once a week, serve as customer service in Information Center and facilitate 150 new students in 12 sessions of New Student Orientation over 4 years.
+                    </li>
+                </ul>
+                </div>
+            </div>
+    </div>
+</div>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="http://w3resource.com/twitter-bootstrap/twitter-bootstrap-v2/js/bootstrap-tooltip.js"></script>
+    <script src="http://w3resource.com/twitter-bootstrap/twitter-bootstrap-v2/js/bootstrap-popover.js"></script>
+<script type="text/javascript">
+$('#myModal').modal('show');
+</script>
+
+<script>
+$(function(e) {
+  e.preventDefault;
+  // popover on hover
+  $('.hover').popover({
+    html: true,
+    trigger: "hover",
+  });
+});
+$('div.random').mouseenter (
+    function(){
+    $('.jobdescription').addClass('random');
+    $('.lists').addClass('random');
+    $('.jobdescription').removeClass('ambos');
+    $('.lists').removeClass('ambos');
+});
+$('div.random').mouseleave(
+    function(){ $('.jobdescription').removeClass('random');
+    $('.lists').removeClass('random');
+});
+$('div.chs').mouseenter (
+    function(){
+    $('.jobdescription').removeClass('ambos');
+    $('.lists').removeClass('ambos');
+});
+$('div.ambos').mouseenter(
+    function(){ $('.jobdescription').addClass('ambos');
+    $('.lists').addClass('ambos');
+});
+$('div.hhco').mouseenter(
+    function(){ $('.jobdescription').addClass('hhco');
+    $('.lists').addClass('hhco');
+    $('.jobdescription').removeClass('ambos');
+    $('.lists').removeClass('ambos');
+
+});
+$('div.hhco').mouseleave(
+    function(){ $('.jobdescription').removeClass('hhco');
+    $('.lists').removeClass('hhco');
+});
+$('div.vista').mouseenter(
+    function(){ $('.jobdescription').addClass('vista');
+    $('.lists').addClass('vista');
+    $('.jobdescription').removeClass('ambos');
+    $('.lists').removeClass('ambos');
+});
+$('div.vista').mouseleave(
+    function(){ $('.jobdescription').removeClass('vista');
+    $('.lists').removeClass('vista');
+});
+$('div.uop').mouseenter(
+    function(){ $('.jobdescription').addClass('uop');
+    $('.lists').addClass('uop');
+    $('.jobdescription').removeClass('ambos');
+    $('.lists').removeClass('ambos');
+});
+$('div.uop').mouseleave(
+    function(){ $('.jobdescription').removeClass('uop');
+    $('.lists').removeClass('uop');
+});
+</script>
+</body>
+
+</html>
